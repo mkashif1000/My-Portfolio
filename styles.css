@@ -1,0 +1,343 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lateef', sans-serif;
+}
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #0D0D0D;
+    color: white;
+}
+
+header {
+    position: fixed;
+    background-color: #0D0D0D;
+    width: 100%;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5em;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+.navMenu p {
+    font-size: 30px;
+}
+
+.heroSection {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 18em;
+}
+
+.heroPicture {
+    margin-top: 25px;
+}
+
+.tagline {
+    display: inline-block;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tagline h1 {
+    font-size: 50px;
+}
+
+.typing {
+    border-right: 5px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+          typing 1s steps(23) ,
+          cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.tagline p {
+    font-size: 25px;
+}
+
+.heroButtons {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.heroButtons button {
+    color: white;
+    background-color: #D62828;
+    border-radius: 20px;
+    font-size: 30px;
+    padding-inline: 15px;
+}
+
+.heroButtons button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    animation: button 0.1s ease-in forwards ;
+}
+
+@keyframes button {
+    0% {
+        font-size: 30px;
+    }
+    100% {
+        font-size: 31px;
+    }
+}
+
+
+
+.projectSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    gap: 50px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.heading h1 {
+    font-size: 40px;
+}
+
+.projectBox {
+    width: 150px;
+    height: 250px;
+    background-color: red;
+    border: 3px solid white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+}
+
+.projectBox h1 {
+    font-size: 30px;
+}
+
+.projectBox p {
+    font-size: 20px;
+}
+
+.contactSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contact p {
+    font-size: 20px;
+}
+
+i {
+    font-size: 30px;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-top: 3px solid white;
+    margin-top: 100px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navMenu p:hover {
+    color: #D62828;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #D62828;
+}
+
+#movetotop {
+    border-radius: 50%;
+    border: 3px solid white;
+    position:fixed;
+    margin-top: 80vh;
+    margin-left: 180vh;
+}
+
+#movetotop i {
+    display: block;
+    color: black;
+}
+
+#movetotop i:hover {
+    color: #D62828;
+}
+
+.toggleButton {
+    position: fixed;
+    z-index: 2;
+    margin-top: 30px;
+    margin-left: 180vh;
+}
+
+
+/* Responsive Design */
+
+@media (max-width : 500px) {
+
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .navbar {
+    height: 80px;
+    gap: 2em;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.navMenu {
+    gap: 2em;
+}
+
+.navMenu p {
+    font-size: 20px;
+}
+
+.heroSection {
+    flex-direction: column;
+    gap: 3em;
+}
+
+.heroPicture img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.tagline {
+    display: inline-block;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 200px;
+}
+
+.tagline h1 {
+    font-size: 30px;
+}
+
+.tagline p {
+    font-size: 15px;
+}
+
+.heroButtons {
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.heroButtons button {
+    font-size: 20px;
+    padding-inline: 10px;
+}
+
+@keyframes button {
+    0% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 21px;
+    }
+}
+
+.projectSection {
+    margin-top: 400px;
+    margin-bottom: 350px;
+}
+
+.projects {
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contactSection {
+    margin-top: 400px;
+}
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+}
